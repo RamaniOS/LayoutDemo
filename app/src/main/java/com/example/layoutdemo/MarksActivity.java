@@ -37,16 +37,16 @@ public class MarksActivity extends AppCompatActivity {
         Button submit = findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ShowActivity.class);
-                intent.putExtra(MADT1, madt1.getText());
-                intent.putExtra(MADT2, madt2.getText());
-                intent.putExtra(MADT3, madt3.getText());
-                intent.putExtra(MADT4, madt4.getText());
-                intent.putExtra(MADT5, madt5.getText());
-                startActivity(intent);
-            }
-        });
+                   public void onClick(View view) {
+            Intent intent = new Intent(getApplicationContext(), ShowActivity.class);
+            intent.putExtra(MADT1, madt1.getText().toString());
+            intent.putExtra(MADT2, madt2.getText().toString());
+            intent.putExtra(MADT3, madt3.getText().toString());
+            intent.putExtra(MADT4, madt4.getText().toString());
+            intent.putExtra(MADT5, madt5.getText().toString());
+            startActivity(intent);
+        }
+    });
 
     }
 }

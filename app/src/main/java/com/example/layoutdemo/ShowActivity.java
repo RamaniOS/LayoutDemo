@@ -15,8 +15,9 @@ public class ShowActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             String madt1S = bundle.getString(MarksActivity.MADT1);
-            //int madt1 = Integer.parseInt(madt1S);
-            System.out.println(madt1S);
+            int madt1 = Integer.parseInt(madt1S);
+            System.out.println(madt1);
+
         }
     }
 }
